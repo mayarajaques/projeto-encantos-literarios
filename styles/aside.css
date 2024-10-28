@@ -1,92 +1,128 @@
-
-
 .section-intro {
-
   width: 1200px;
   height: 400px;
   position: relative;
   margin-inline: auto;
   margin-top: 96px;
+  border: 1px solid yellow;
+
+  animation: disappearText 1s ease-in backwards;
+}
+
+.text-intro {
+  width: 1136px;
+  height: 128px;
+  margin-inline: auto;
+  padding-top: 114px;
+  display: inline-block;
+
+}
+
+.text-block{
+  opacity: 0.5;
+}
+
+.highlight {
+  color: var(--blue-light);
+  font: var(--text-body);
+  opacity: 0.5;
+}
 
 
-  & span {
-    color: var(--blue-light);
+@keyframes appearText {
+  
+  to{
+    opacity: 100%;
   }
+}
 
 
-  & .text-intro {
-    width: 1136px;
-    height: 128px;
 
-    margin-inline: auto;
+img[src*="spellbook"] {
+  width: 80px;
+  height: 80px;
+  top: 6%;
+  right: 48%;
+  rotate: 20deg;
 
-    padding-top: 114px;
-
-
-  }
-
-  & img[src*="spellbook"],
-  & img[src*="mystery"],
-  & img[src*="crystal-ball"] {
-    position: absolute;
-    opacity: 1;
-    /* Iniciar invisível */
-
-    animation: icone-appear 3s;
-    animation-timeline: view();
-
-  }
-
-  & img[src*="spellbook"] {
-
-
-    width: 80px;
-    height: 80px;
-
-    top: 6%;
-    right: 48%;
-    rotate: 20deg;
-
-    animation-delay: 0s;
-    /* Atraso para o primeiro ícone */
-
-    /* animation: icone-appear 1s forwards;  */
-
-  }
-
-  & img[src*="mystery"] {
-
-
-    width: 72.72px;
-    height: 72.72px;
-
-    bottom: 30%;
-    rotate: 98deg;
-    left: 2%;
-
-    animation-delay: 0.5s;
-    /* Atraso para o segundo ícone */
+  &:hover{
+    transform: scale(1.1) translateY(-5px) rotate(10deg); ; 
 
   }
+}
 
-  & img[src*="crystal-ball"] {
+img[src*="mystery"] {
+  width: 72.72px;
+  height: 72.72px;
+  bottom: 30%;
+  rotate: 98deg;
+  left: 2%;
 
 
-
-    width: 65.45px;
-    height: 65.45px;
-    right: 1%;
-    bottom: 30%;
-    rotate: -20deg;
-
-    animation-delay: 1s;
-    /* Atraso para o terceiro ícone */
-
+  &:hover{
+    transform: scale(1.1) translateY(-5px) rotate(10deg);
   }
 
-  &img:hover {
+}
 
-    opacity: 1;
+img[src*="crystal-ball"] {
+  width: 65.45px;
+  height: 65.45px;
+  right: 1%;
+  bottom: 30%;
+
+
+  &:hover{
+    transform: scale(1.1) translateY(-5px) rotate(10deg); 
+  }
+}
+
+/* Estilizando as imagens */
+img[src*="spellbook"],
+img[src*="mystery"],
+img[src*="crystal-ball"] {
+  position: absolute;
+  opacity: 0;
+
+}
+
+
+
+
+/* Animação ao passar o mouse - imagens e textos */
+.section-intro:hover img[src*="spellbook"],
+.section-intro:hover .text-intro h2 span:nth-of-type(1) {
+  animation: appearImages 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.section-intro:hover img[src*="mystery"],
+.section-intro:hover .text-intro h2 span:nth-of-type(2) {
+  animation: appearImages 1s forwards;
+  animation-delay: 2s;
+}
+
+.section-intro:hover img[src*="crystal-ball"],
+.section-intro:hover .text-intro h2 span:nth-of-type(3) {
+  animation: appearImages 1s forwards;
+  animation-delay: 4s;
+}
+
+
+
+@keyframes appearImages {
+
+  to {
+    opacity: 100%;
+  }
+
+}
+
+
+@keyframes disappearText {
+
+  to {
+    opacity: 0.5%;
   }
 
 }
