@@ -1,0 +1,114 @@
+main {
+  max-width: 1440px;
+  margin-inline: auto;
+
+
+
+  & .main-kit {
+    margin-top: 235px;
+
+
+    & .flex {
+      gap: 16px;
+    }
+
+    & p {
+      margin-top: 5px;
+    }
+  }
+
+}
+
+.book-kit {
+  height: 920px;
+  /* border: 1px solid red; */
+  margin-top: 88px;
+  margin-bottom: 278px;
+
+  & img[src*="book"] {
+    width: 467px;
+    height: 617px;
+  }
+
+  .book-element {
+    position: relative;
+    position: absolute;
+
+    & p {
+      position: absolute;
+      font: var(--body-md);
+      color: var(--text-title);
+      font-weight: 400;
+    }
+
+
+    & img[src*="arrow-1"] {
+      position: absolute;
+      top: -25px;
+      left: -140px;
+
+    }
+
+    & p:nth-child(2){
+      top: -70px;
+      left: -210px
+    }
+
+
+    & img[src*="pin"] {
+      position: absolute;
+      width: 222px;
+      height: 254px;
+
+      bottom: -75px;
+      left: -140px;
+      z-index: -1;
+      rotate: -10deg;
+    }
+
+    & > div p:nth-child(1){
+      top: 300px;
+      left: -200px;
+    }
+
+    & img[src*="arrow-2"] {
+      position: absolute;
+      bottom: 140px;
+      left: -190px;
+
+    }
+
+    & img[src*="yellow"],
+      img[src*="purple"] {
+      position: absolute;
+      width: 172px;
+      height: 536px;
+    }
+
+    & img[src*="yellow"]{
+      top: -70px;
+      right: -120px;
+      rotate: 10deg;
+      z-index: -1;
+    }
+
+    & img[src*="purple"]{
+      top: 20px;
+      right: -220px;
+      rotate: 19deg;
+      z-index: -2;
+    }
+
+    & img[src*="arrow-3"] {
+      position: absolute;
+      bottom: -60px;
+      right: -170px;
+    }
+
+    & > div:last-of-type p{ 
+      bottom: -100px;
+      right: -100px;
+    }
+  }
+}
+

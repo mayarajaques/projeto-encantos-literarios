@@ -1,0 +1,146 @@
+.section-pricing {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-top: 194px;
+  border: 1px solid yellow;
+  padding-inline: 185px 205px;
+
+
+
+
+  .card {
+    width: 288px;
+    height: 416px;
+    border: 1px solid var(--shape-stroke);
+    padding: 32px 32px 28px 32px;
+
+    background: var(--shape-shape-base, #000F1F);
+    border-radius: 24px;
+
+    & .price {
+
+      & .plan {
+
+        font: var(--title-xs);
+        color: var(--blue-light);
+        margin-bottom: 24px;
+      }
+
+      & p {
+
+        font: var(--body-sm);
+        color: var(--text-label);
+      }
+    }
+
+    & img {
+      width: 14px;
+      height: 14px;
+    }
+
+    .details {
+
+      gap: 12px;
+
+      .flex {
+        gap: 8px;
+
+        & p {
+          font: var(--body-xs);
+          color: var(--text-body);
+
+        }
+      }
+    }
+
+
+    & button {
+      width: 224px;
+      height: 40px;
+      appearance: none;
+      background-color: var(--blue-dark);
+      color: var(--text-title);
+      font: var(--button);
+      padding-inline: 20px;
+      border-radius: 8px;
+      margin-top: 24px;
+    }
+  }
+
+  .cards-content {
+    width: 1050px;
+    height: 606px;
+    /* margin-inline: 195px; */
+    margin-top: 66px;;
+    border: 1px solid springgreen;
+    position: relative;
+
+  }
+
+  .price-mensal {
+    transform: rotate(-8deg);
+    position: absolute;
+    top: 120px;
+    left: 50px;
+
+    & .price {
+      margin-bottom: 99px;
+    }
+  }
+
+
+
+  & em {
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    font: var(--tag);
+    color: var(--text-body);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: var(--shape-stroke);
+    border-radius: var(--border-radius-border-full, 999px);
+    padding: 9px;
+
+  }
+
+  .price-biannual {
+    position: absolute;
+    top: 60px;
+    left: 340px;
+
+    .flex-tag {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    }
+
+    & .price {
+      margin-bottom: 70px;
+    }
+
+  }
+
+  .price-annual {
+
+    position: absolute;
+    transform: rotate(8deg);
+    top: 120px;
+    right: 120px;
+    /* z-index: -1; */
+
+    .plan {
+      margin-bottom: 24px;
+    }
+
+    h4 {
+      /* display: block; */
+    }
+
+    & .price {
+      margin-bottom: 32px
+    }
+  }
+
+}

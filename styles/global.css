@@ -11,11 +11,14 @@
 
   --ff-raleway: "Raleway", sans-serif;
   --title-lg: 700 48px/1.2 var(--ff-raleway);
+
   --title-md: 700 40px/1.2 var(--ff-raleway);
   --title-sm: 700 32px/1.2 var(--ff-raleway);
   --title-xs: 700 16px/1.2 var(--ff-raleway);
   --subtitle: 500 32px/1.2 var(--ff-raleway);
   --body-lg: 600 20px/1.4 var(--ff-raleway);
+  --text-md: 400 20px/1.4 var(--ff-raleway);
+  
   --body-md: 600 16px/1.4 var(--ff-raleway);
   --body-sm: 600 14px/1.4 var(--ff-raleway);
   --body-xs: 600 12px/1.4 var(--ff-raleway);
@@ -44,33 +47,63 @@
   --shape-stroke: #002347;
   --shape-hover: #001933;
   --shape-base: #000F1F;
-  --shape-background: #000F1F;
+  --shape-background: #00050A;
 
 
   background-color: var(--shape-background);
 
 
 
-
 }
 
-body{
-
+h1, h3, h4{
+  color: var(--text-title);
 }
+
+
 
 h1 {
   font: var(--title-lg);
-  color: var(--text-title);
+  text-align: center;
 
-}
-
-p {
-  font: var(--body-lg);
-  color: var(--text-body);
 }
 
 h2 {
   font: var(--subtitle);
   color: var(--text-body);
   text-align: center;
+}
+
+p {
+  font: var(--text-md);
+  color: var(--text-body);
+}
+
+
+h3{
+  font: var(--title-sm);
+
+}
+
+h4{
+  font: var(--title-md);
+  display: inline-block; 
+
+}
+
+small{
+  display: inline;
+  font: var(--title-xs);
+  color: var(--text-title);
+  vertical-align: middle;
+
+}
+
+button{
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font: var(--button);
+  color: var(--text-title);
 }

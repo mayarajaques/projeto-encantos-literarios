@@ -1,0 +1,95 @@
+
+
+.section-intro {
+
+  width: 1200px;
+  height: 400px;
+  position: relative;
+  margin-inline: auto;
+  margin-top: 96px;
+
+
+  border: 1px solid yellow;
+
+
+  & span {
+    color: var(--blue-light);
+  }
+
+
+  & .text-intro {
+    width: 1136px;
+    height: 128px;
+
+    margin-inline: auto;
+
+    padding-top: 114px;
+
+
+  }
+
+  & img[src*="spellbook"],
+  & img[src*="mystery"],
+  & img[src*="crystal-ball"] {
+    position: absolute;
+    opacity: 1;
+    /* Iniciar invisível */
+
+    animation: icone-appear 3s;
+    animation-timeline: view();
+
+  }
+
+  & img[src*="spellbook"] {
+
+
+    width: 80px;
+    height: 80px;
+
+    top: 6%;
+    right: 48%;
+    rotate: 20deg;
+
+    animation-delay: 0s;
+    /* Atraso para o primeiro ícone */
+
+    /* animation: icone-appear 1s forwards;  */
+
+  }
+
+  & img[src*="mystery"] {
+
+
+    width: 72.72px;
+    height: 72.72px;
+
+    bottom: 30%;
+    rotate: 98deg;
+    left: 2%;
+
+    animation-delay: 0.5s;
+    /* Atraso para o segundo ícone */
+
+  }
+
+  & img[src*="crystal-ball"] {
+
+
+
+    width: 65.45px;
+    height: 65.45px;
+    right: 1%;
+    bottom: 30%;
+    rotate: -20deg;
+
+    animation-delay: 1s;
+    /* Atraso para o terceiro ícone */
+
+  }
+
+  &img:hover {
+
+    opacity: 1;
+  }
+
+}
