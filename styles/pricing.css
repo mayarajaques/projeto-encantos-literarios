@@ -1,12 +1,23 @@
 .section-pricing {
   max-width: 1440px;
-  margin-inline: auto;
+  /* margin-inline: auto; */
   padding-top: 194px;
-  border: 1px solid yellow;
   padding-inline: 185px 205px;
+  padding-bottom: 298px;
+  /* position: relative; */
 
 
 
+
+  & span {
+    font: var(--title-xs);
+    /* margin-bottom: 24px; */
+  }
+
+  & img {
+    width: 14px;
+    height: 14px;
+  }
 
   .card {
     width: 288px;
@@ -14,32 +25,19 @@
     border: 1px solid var(--shape-stroke);
     padding: 32px 32px 28px 32px;
 
+
     background: var(--shape-shape-base, #000F1F);
     border-radius: 24px;
 
     & .price {
-
-      & .plan {
-
-        font: var(--title-xs);
-        color: var(--blue-light);
-        margin-bottom: 24px;
-      }
-
       & p {
-
         font: var(--body-sm);
         color: var(--text-label);
+        font-weight: 400;
       }
-    }
-
-    & img {
-      width: 14px;
-      height: 14px;
     }
 
     .details {
-
       gap: 12px;
 
       .flex {
@@ -48,7 +46,7 @@
         & p {
           font: var(--body-xs);
           color: var(--text-body);
-
+          font-weight: 400;
         }
       }
     }
@@ -70,67 +68,142 @@
   .cards-content {
     width: 1050px;
     height: 606px;
-    /* margin-inline: 195px; */
-    margin-top: 66px;;
-    border: 1px solid springgreen;
+    margin-top: 66px;
     position: relative;
+    padding-inline: 185px 205px;
 
   }
 
   .price-mensal {
-    transform: rotate(-8deg);
+    /* transform:  translateX(-50%) translateY(-50%); */
     position: absolute;
-    top: 120px;
-    left: 50px;
+    top: 20%;
+    /* Centraliza verticalmente */
+    left: 9%;
+    right: 0;
+    /* Centraliza horizontalmente */
+    z-index: -1;
+    /* Card mais acima */
+    transform: rotate(-8deg);
+
+
+    .plan {
+      color: var(--blue-light);
+      margin-bottom: 24px;
+    }
 
     & .price {
       margin-bottom: 99px;
     }
+
+
+    & .stars {
+
+      & img:nth-child(1) {
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: -30px;
+        left: -20px;
+
+    
+      }
+
+
+      & img:nth-child(2) {
+        width: 13.055px;
+        height: 13.055px;
+        position: absolute;
+        top: 4px;
+        left: -35px;
+      }
+
+    }
+
   }
 
 
 
-  & em {
-    width: 90px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    font: var(--tag);
-    color: var(--text-body);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    background: var(--shape-stroke);
-    border-radius: var(--border-radius-border-full, 999px);
-    padding: 9px;
-
-  }
 
   .price-biannual {
+
+    transform: translateX(-50%) translateY(-50%);
     position: absolute;
-    top: 60px;
-    left: 340px;
+    top: 50%;
+    /* Centraliza verticalmente */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    z-index: 2;
+    /* Card abaixo do mensal */
 
     .flex-tag {
       display: flex;
       justify-content: space-between;
-      align-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+
     }
+
+    & .plan {
+      color: var(--pink-light);
+
+
+    }
+
+    & em {
+      width: 90px;
+      height: 30px;
+      text-align: center;
+      text-decoration: none;
+      font: var(--tag);
+      color: var(--text-body);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      background: var(--shape-stroke);
+      border-radius: var(--border-radius-border-full, 999px);
+      padding: 9px;
+
+    }
+
 
     & .price {
       margin-bottom: 70px;
+    }
+
+    button {
+      background-color: var(--pink-dark);
+    }
+
+    img[src*="bunny"] {
+      position: absolute;
+      width: 45.05px;
+      height: 49px;
+
+      right: 0;
+      left: 30px;
+      top: -49px;
     }
 
   }
 
   .price-annual {
 
+
+    /* transform: translateX(-30%) translateY(-50%); */
     position: absolute;
-    transform: rotate(8deg);
-    top: 120px;
-    right: 120px;
+    top: 20%;
+    /* Centraliza verticalmente */
+
+    right: 9%;
+    /* Centraliza horizontalmente */
+    z-index: 1;
+    /* Card mais ao fundo */
     /* z-index: -1; */
+    transform: rotate(8deg);
 
     .plan {
+      /* margin-bottom: 24px; */
+      color: var(--blue-light);
       margin-bottom: 24px;
     }
 
@@ -141,6 +214,28 @@
     & .price {
       margin-bottom: 32px
     }
+  }
+
+  & .stars {
+
+    & img:nth-child(1) {
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      bottom: -20px;
+      right: -40px;
+
+    }
+
+
+    & img:nth-child(2) {
+      position: absolute;
+      width: 11.25px;
+      height: 11.25px;
+      bottom: -20px;
+      right: 0
+    }
+
   }
 
 }

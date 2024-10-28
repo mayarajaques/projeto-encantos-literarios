@@ -52,12 +52,8 @@
 
   background-color: var(--shape-background);
 
-
-
-}
-
-h1, h3, h4{
   color: var(--text-title);
+
 }
 
 
@@ -94,7 +90,6 @@ h4{
 small{
   display: inline;
   font: var(--title-xs);
-  color: var(--text-title);
   vertical-align: middle;
 
 }
