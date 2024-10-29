@@ -4,7 +4,6 @@
   position: relative;
   margin-inline: auto;
   margin-top: 96px;
-  border: 1px solid yellow;
 
   animation: disappearText 1s ease-in backwards;
 }

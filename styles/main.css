@@ -32,7 +32,7 @@ main {
 
   .book-element {
     position: relative;
-    position: absolute;
+
 
     & p {
       position: absolute;
@@ -46,12 +46,14 @@ main {
       position: absolute;
       top: -25px;
       left: -140px;
+      /* opacity: 0; */
 
     }
 
     & p:nth-child(2){
       top: -70px;
-      left: -210px
+      left: -210px;
+      /* opacity: 0; */
     }
 
 
@@ -64,17 +66,20 @@ main {
       left: -140px;
       z-index: -1;
       rotate: -10deg;
+      /* opacity: 0; */
     }
 
     & > div p:nth-child(1){
       top: 300px;
       left: -200px;
+      /* opacity: 0; */
     }
 
     & img[src*="arrow-2"] {
       position: absolute;
       bottom: 140px;
       left: -190px;
+      /* opacity: 0; */
 
     }
 
@@ -83,6 +88,9 @@ main {
       position: absolute;
       width: 172px;
       height: 536px;
+      /* opacity: 0; */
+
+  
     }
 
     & img[src*="yellow"]{
@@ -97,17 +105,34 @@ main {
       right: -220px;
       rotate: 19deg;
       z-index: -2;
+      /* opacity: 0; */
     }
 
     & img[src*="arrow-3"] {
       position: absolute;
       bottom: -60px;
       right: -170px;
+      /* opacity: 0; */
     }
 
     & > div:last-of-type p{ 
       bottom: -100px;
       right: -100px;
+      /* opacity: 0; */
+    }
+
+    @keyframes appearkit {
+      
+      100%{
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      
+      100%{
+        transform: translateX(20px)
+      }
     }
   }
 }
