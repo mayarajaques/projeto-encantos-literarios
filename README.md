@@ -2,7 +2,7 @@
 
 <p align="center">
   Desafio desenvolvido com o curso Fullstack da Rocketseat. <br>
-  <strong>O principal objetivo deste projeto é aplicar os conceitos de animations e transtions.</strong>
+  <strong>O principal objetivo deste projeto é aplicar os conceitos de animations e transitions.</strong>
 </p>
 
 <p align="center">
