@@ -29,8 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Este projeto é um conversor de moedas. Converta os valores de reais para Dólar, Euro e Libra.
-
+Este projeto é uma landing page de uma assinatura de livros.
 ---
 
 Feito com ♥ by May
